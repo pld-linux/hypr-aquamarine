@@ -1,0 +1,10 @@
+--- aquamarine-0.3.0/CMakeLists.txt.orig	2024-08-06 16:29:49.000000000 +0200
++++ aquamarine-0.3.0/CMakeLists.txt	2024-08-07 22:49:21.253404349 +0200
+@@ -46,7 +46,6 @@
+   message(STATUS "Configuring aquamarine in Debug")
+   add_compile_definitions(AQUAMARINE_DEBUG)
+ else()
+-  add_compile_options(-O3)
+   message(STATUS "Configuring aquamarine in Release")
+ endif()
+ 
