@@ -9,6 +9,7 @@ Source0:	https://github.com/hyprwm/aquamarine/archive/v%{version}/aquamarine-v%{
 # Source0-md5:	b03015c1077a22b3f74dc96735f2180f
 Patch0:		flags.patch
 URL:		https://hyprland.org/
+BuildRequires:	EGL-devel
 BuildRequires:	Mesa-libgbm-devel
 BuildRequires:	OpenGL-devel
 BuildRequires:	OpenGLESv2-devel
