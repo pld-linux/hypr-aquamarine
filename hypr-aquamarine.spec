@@ -1,12 +1,12 @@
 Summary:	Very light linux rendering backend library
 Name:		hypr-aquamarine
-Version:	0.4.5
+Version:	0.5.0
 Release:	1
 License:	BSD
 Group:		Libraries
 #Source0Download: https://github.com/hyprwm/aquamarine/releases
 Source0:	https://github.com/hyprwm/aquamarine/archive/v%{version}/aquamarine-v%{version}.tar.gz
-# Source0-md5:	3922f2a3ae65e216e0ce7120d73e5c64
+# Source0-md5:	43558331b2174f4b9457c0931236b466
 Patch0:		flags.patch
 URL:		https://hyprland.org/
 BuildRequires:	EGL-devel
@@ -76,7 +76,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc LICENSE README.md
 %attr(755,root,root) %{_libdir}/libaquamarine.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libaquamarine.so.3
+%attr(755,root,root) %ghost %{_libdir}/libaquamarine.so.4
 
 %files devel
 %defattr(644,root,root,755)
