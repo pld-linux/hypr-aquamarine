@@ -53,7 +53,7 @@ Header files for aquamarine.
 
 %prep
 %setup -q -n aquamarine-%{version}
-%patch0 -p1
+%patch -P 0 -p1
 
 %build
 %cmake -B build
