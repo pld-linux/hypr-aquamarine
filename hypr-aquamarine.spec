@@ -1,12 +1,12 @@
 Summary:	Very light linux rendering backend library
 Name:		hypr-aquamarine
-Version:	0.7.2
-Release:	2
+Version:	0.8.0
+Release:	1
 License:	BSD
 Group:		Libraries
 #Source0Download: https://github.com/hyprwm/aquamarine/releases
 Source0:	https://github.com/hyprwm/aquamarine/archive/v%{version}/aquamarine-v%{version}.tar.gz
-# Source0-md5:	61c6a668d792276872a1721752719a49
+# Source0-md5:	b573d36528d2548d3ffa0e572da5f347
 Patch0:		flags.patch
 URL:		https://hyprland.org/
 BuildRequires:	EGL-devel
@@ -15,7 +15,7 @@ BuildRequires:	OpenGL-devel
 BuildRequires:	OpenGLESv2-devel
 BuildRequires:	cmake >= 3.19
 BuildRequires:	hwdata
-BuildRequires:	hyprutils-devel >= 0.2.3
+BuildRequires:	hyprutils-devel >= 0.5.2
 BuildRequires:	hyprwayland-scanner >= 0.4.0
 BuildRequires:	libdisplay-info-devel
 BuildRequires:	libdrm-devel
@@ -28,7 +28,7 @@ BuildRequires:	rpmbuild(macros) >= 1.605
 BuildRequires:	udev-devel
 BuildRequires:	wayland-devel
 BuildRequires:	wayland-protocols
-Requires:	hyprutils >= 0.2.3
+Requires:	hyprutils >= 0.5.2
 Requires:	libinput >= 1.26.0
 Requires:	libseat >= 0.8.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -76,7 +76,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc LICENSE README.md
 %attr(755,root,root) %{_libdir}/libaquamarine.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libaquamarine.so.6
+%attr(755,root,root) %ghost %{_libdir}/libaquamarine.so.7
 
 %files devel
 %defattr(644,root,root,755)
