@@ -1,7 +1,7 @@
 Summary:	Very light linux rendering backend library
 Name:		hypr-aquamarine
 Version:	0.8.0
-Release:	1
+Release:	2
 License:	BSD
 Group:		Libraries
 #Source0Download: https://github.com/hyprwm/aquamarine/releases
